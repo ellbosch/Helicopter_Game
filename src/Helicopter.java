@@ -26,7 +26,7 @@ public class Helicopter extends GameObject{
 	public void draw(Graphics g) throws IOException {
 		try {
 			Graphics2D g2d = (Graphics2D)g;
-			BufferedImage img = ImageIO.read(new File("helicopter.png"));
+			BufferedImage img = ImageIO.read(getClass().getResource("images/helicopter.png"));
 
 			// tilt helicopter slightly while it accelerates
 			double locationX = img.getWidth() / 2;
